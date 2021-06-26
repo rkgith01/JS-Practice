@@ -67,8 +67,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
 //show person based on item
 
-function showPerson() {
-  const item = reviews[currentItems];
+function showPerson(person) {
+  const item = reviews[person];
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
@@ -97,6 +97,8 @@ prevBtn.addEventListener("click", function () {
 randomBtn.addEventListener("click", function () {
   currentItems = Math.floor(Math.random() * reviews.length)
   showPerson();
+  // console.log(currentItems);
+  // showPerson(currentItems);
   // currentItems++;
   // showPerson(currentItems);
   // console.log(currentItems);
