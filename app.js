@@ -1,6 +1,7 @@
 //using selectors inside the element
 
 // Method 1 
+// this method will auto close the opened item when clicking on the new one 
 
 const questions = document.querySelectorAll(".question")
 
